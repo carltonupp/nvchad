@@ -52,6 +52,9 @@ M.general = {
       end,
       "LSP formatting",
     },
+    ["<leader>gr"] = { "<cmd>:split | term gleam run<CR>"},
+    ["<leader>rgt"] = { "<cmd>:split | term gleam test<CR>"},
+    ["<leader>gb"] = { "<cmd>:split | term gleam build<CR>"},
   },
 
   t = {

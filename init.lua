@@ -19,3 +19,9 @@ end
 dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
+
+vim.api.nvim_create_autocmd({"TermOpen"},
+  {
+    pattern = "*",
+    command = "startinsert",
+  })
