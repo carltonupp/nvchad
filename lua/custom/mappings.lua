@@ -46,6 +46,10 @@ M.gopher = {
       "<cmd> GoTagAdd yaml <CR>",
       "Add yaml struct tags",
     },
+    ["<leader>glt"] = {
+      "<cmd> :split | term go test <CR>",
+      "Run Golang Tests"
+    }
   }
 }
 
